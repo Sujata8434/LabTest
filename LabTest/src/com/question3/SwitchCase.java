@@ -1,9 +1,19 @@
+/*
+ * Lab test
+Program: WAP to print Companies tagline
+@author: Sujata kumari
+@Date: 26 oct 2022  
+*/
+
 package com.question3;
+//import packages
 import java.util.Scanner;
+//method to print tagline
 public class SwitchCase {
 
 	static void printTagline(String tag)
 	{
+		//Switch case
 		 switch(tag)
 	   {
 		   //expression level
@@ -14,8 +24,7 @@ public class SwitchCase {
 	   } 
 
 	}	
-
-
+//main started
 	public static void main(String[] args)
 	{
        // switch case with string
@@ -23,7 +32,7 @@ public class SwitchCase {
 
 	    //declaring the object of scanner
 		Scanner sc = new Scanner(System.in);
-
+		//printing Companies tagline
 		System.out.println("Enter any Company name (TATA,HP,ACCENTURE):");
 		inputTagline= sc.next().toLowerCase();// converting the input to lowercase
 

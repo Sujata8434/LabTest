@@ -1,3 +1,10 @@
+/*
+ * Lab test
+Program: WAP to print Employee details 
+@author: Sujata kumari
+@Date: 26 oct 2022  
+*/
+
 package com.question1;
 
 public class Employee {

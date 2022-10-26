@@ -1,5 +1,7 @@
-package com.question1;
 
+
+package com.question1;
+//import packages 
 import java.util.Scanner;
 
 import com.question1.Employee;
@@ -8,7 +10,7 @@ public class EmployeePrintDetails {
 
 	public static void main(String[] args) {
 
-		// creating object of Student class
+		// creating object of Employee 
 		Employee e1 = new 	Employee();
 		Employee e2= new 	Employee();
 
@@ -57,7 +59,6 @@ public class EmployeePrintDetails {
 				// printDetails()
 
 				System.out.println("-------------------------------------");// printDetails()
-
 				System.out.println("-------------------------------------");
 
 				e2.printDetails();

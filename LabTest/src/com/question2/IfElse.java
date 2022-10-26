@@ -1,3 +1,10 @@
+/*
+ * Lab test
+Program: WAP check he/she is allowed tom sit in exam or not
+@author: Sujata kumari
+@Date: 26 oct 2022  
+*/
+
 package com.question2;
 
 import java.util.Scanner;
@@ -23,9 +30,10 @@ public class IfElse {
 			//calculating percentage
 			percentage= (classattend*100)*classheld;
 			
-			//checking the student has cleared the exam or not
+			//checking the student's attendance percentage
 			
 			if(percentage>=75) {
+				//printing student is allowed to sit in exam or not
 				System.out.println("Yes you are allowed to sit in the exam"+percentage);
 			}
 				else {
@@ -38,3 +46,4 @@ public class IfElse {
 		// end of main
 	
 }
+//end class
