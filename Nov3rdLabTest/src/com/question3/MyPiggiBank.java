@@ -1,6 +1,7 @@
 /* 	program of Piggi Bnak
- * author Sujata kumari 
-  date 3rd november 2022 */ 
+* author: Sujata kumari 
+  *Date :3rd november 2022 
+  */ 
 
 package com.question3;
 //class 
