@@ -17,43 +17,52 @@ package com.question2;
 import java.io.*;
 //declaring a class
 public class TriColorLight extends Thread{
-	//main method started
-	public static void main(String[] args) {
+	
 		
-		//methods for thread
-		Thread Green = new Thread();
-		Thread  Yellow= new Thread();
-		Thread Red = new Thread();
-
-	//	public void run()
-	//	{
-			System.out.println("RED LIGHT IS ON");
-			//try catch started
-			try {
+		//declaring a class
+		public static final String ANSI_RESET = "\u001B[0m";
+		public static final String ANSI_RED_BACKGROUND = "\u001B[41m";
+		public static final String ANSI_YELLOW = "\u001B[33m";
+		public static final String ANSI_GREEN = "\u001B[32m";
+		public static final String ANSI_RED = "\u001B[31m";
+		  
+		//main method started
+		public static void main(String[] args) {
 				
-				  Green.sleep(4000);
-				System.out.println(" RED Light is OFF");
-				System.out.println("Now GREEN Light is ON");
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			try {
-			Yellow.sleep(4000);
-				System.out.println(" GREEN Light is OFF");
-				System.out.println("Now YELLOW Light is  ON");
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+				//methods for thread
+				Thread Green = new Thread();
+				Thread  Yellow= new Thread();
+				Thread Red = new Thread();
 			
-			try {
-				Red.sleep(4000);
-				System.out.println("YELLOW Light is OFF");
-				System.out.println("Now RED Light is ON");
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			//	public void run()
+			//	{
+					System.out.println(  ANSI_RED_BACKGROUND+ "RED LIGHT IS ON" +ANSI_RESET);
+					//try catch started
+					try {
+						
+						  Green.sleep(4000);
+						System.out.println(" RED Light is OFF"  );
+						System.out.println(ANSI_GREEN+"Now GREEN Light is ON"+ANSI_RESET);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					try {
+					Yellow.sleep(4000);
+						System.out.println(" GREEN Light is OFF");
+						System.out.println(ANSI_YELLOW+"Now YELLOW Light is  ON"+ANSI_RESET);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					
+					try {
+						Red.sleep(4000);
+						System.out.println("YELLOW Light is OFF");
+						System.out.println(ANSI_RED+"Now RED Light is ON"+ANSI_RESET);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
 			}
 			
 		}//end of main  method
