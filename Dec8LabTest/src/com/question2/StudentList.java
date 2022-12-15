@@ -1,4 +1,9 @@
-
+/*
+ * Program: Identify the student(name) with the help of thier id(unique) from the 
+ * 	generic list of students
+ * @Author: Sujata kumari
+ * @Date: 08/12/2022
+ * */
 
 package com.question2;
 //importing packages
