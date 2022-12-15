@@ -26,7 +26,7 @@ public class AuthorInfo {
 				throws ClassNotFoundException, SQLException, SQLNonTransientConnectionException {
 			
 			// Declaring Variables
-			String url ="jdbc:mysql://localhost:3306/authorinformation";
+			String url ="jdbc:mysql://localhost:3306/author";
 			String username = "root";
 			String password = "";
 
@@ -35,7 +35,7 @@ public class AuthorInfo {
 			Statement st = conn.createStatement();
 
 			// SQL query for finding city name.
-			String sql = "select * from authorinformation where city like '%S'";
+			String sql = "SELECT * FROM authorinformation WHERE city LIKE  'S%'";
 
 			// ResultSet Class used for retrieve data from database.
 			ResultSet rs = st.executeQuery(sql);
